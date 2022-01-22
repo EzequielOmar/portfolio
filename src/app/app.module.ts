@@ -10,9 +10,13 @@ import {
   ScreenTrackingService,
   UserTrackingService,
 } from '@angular/fire/analytics';
+import { MainComponent } from './main/main.component';
+import { NavComponent } from './nav/nav.component';
+import { ProyectsComponent } from './proyects/proyects.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MainComponent, NavComponent, ProyectsComponent, ContactComponent],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
