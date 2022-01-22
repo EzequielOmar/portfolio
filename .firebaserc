@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ezequielomar-2390d": {
+      "hosting": {
+        "ezequielomar": [
+          "ezequielomar-2390d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ezequielomar-2390d"
+  }
+}
