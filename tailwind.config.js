@@ -10,12 +10,14 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  prefix: '',
-    purge: {
-      enabled: true,
-      content: [
-        './src/**/*.{html,ts}',
-      ]
-    },
+
+  // prefix: '',
+ //   purge: {
+ //     enabled: true,
+ //     content: [
+ //       './src/**/*.{html,ts}',
+ //     ]
+ //   },
+
 };
 

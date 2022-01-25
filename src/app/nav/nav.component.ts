@@ -7,6 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class NavComponent {
   @Output() lenguageSelected: EventEmitter<string> = new EventEmitter();
+  //handle responsive menu
+  open: boolean = false;
 
   constructor() {}
 

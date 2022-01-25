@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { IconsModule } from './feather-icons/feather-icons.module';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
       },
     }),
     BrowserModule,
+    //icons
+    IconsModule,
   ],
   providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],
