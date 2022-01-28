@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.btn {
+  @apply lg:w-auto my-8 border rounded py-4 px-8 text-center hover:bg-contrast_dark;
+}
+
+.tittle {
+  @apply sm:text-5xl tracking-tight;
+}

@@ -14,7 +14,8 @@ export class AppComponent {
     translate.setDefaultLang(this.language);
   }
 
-  setLenguage(lang: string): void {
+  setLanguage(lang: string): void {
+    this.language = lang;
     this.translate.use(lang);
   }
 }

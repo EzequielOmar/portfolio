@@ -1,3 +1,14 @@
 {
-  "demo": "helo"
+  "menu": {
+    "work": "Works",
+    "contact": "Contact Me"
+  },
+  "main": {
+    "hi": "Hi, I'm",
+    "make":"I make software.",
+    "about": "Argentine, self-taught, interested in learning, improving, working as a team, and building efficient systems."
+  },
+  "proyects": {
+    "tools": "Tools"
+  }
 }

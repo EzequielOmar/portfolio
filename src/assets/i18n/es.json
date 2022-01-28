@@ -1,3 +1,14 @@
 {
-  "demo": "holi"
+  "menu": {
+    "work": "Ver Trabajos",
+    "contact": "Contáctame"
+  },
+  "main": {
+    "hi": "Hola, soy",
+    "make": "Hago software.",
+    "about": "Argentino, autodidacta, interesado en aprender, mejorar, trabajar en equipo, y construir sistemas eficientes."
+  },
+  "proyects": {
+    "tools": "Herramientas"
+  }
 }

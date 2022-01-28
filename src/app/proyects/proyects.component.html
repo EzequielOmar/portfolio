@@ -1,1 +1,28 @@
-<p>proyects works!</p>
+<section>
+  <h2 class="tittle text-center text-light">{{'menu.work'|translate}}</h2>
+  <div class="container px-5 py-10 mx-auto text-center lg:px-20 text-light">
+    <ul class="flex flex-wrap -m-4">
+      <li *ngFor="let p of proyects" class="sm:w-1/2 w-100 p-8 ">
+        <h2 class="title-font text-lg font-semibold mb-3">{{p.name}}</h2>
+        <div class="flex relative">
+          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center " src="{{p.gif}}">
+          <div class="px-8 pt-16 pb-10 relative z-10 w-full border-2 bg-darker opacity-0 hover:opacity-90">
+            <p class="leading-relaxed">
+              {{p.description}}
+            </p>
+            <h3 class="mt-3 font-semibold text-contrast">{{'proyects.tools'|translate}}:</h3>
+            <p class="leading-relaxed">
+              {{p.tools}}
+            </p>
+            <a href="{{p.host}}" target="_blanck">
+              <i-feather class="mx-4 cursor-pointer mt-3 text-contrast" name="cloud"></i-feather>
+            </a>
+            <a href="{{p.git}}" target="_blanck">
+              <i-feather class="mx-4 cursor-pointer mt-3 text-contrast" name="code"></i-feather>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,13 +6,12 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent {
-  @Output() lenguageSelected: EventEmitter<string> = new EventEmitter();
-  //handle responsive menu
-  open: boolean = false;
+  @Output() languageSelected: EventEmitter<string> = new EventEmitter();
+  @Input() lang?: string;
 
   constructor() {}
 
-  changeLenguage(leng: string) {
-    this.lenguageSelected.emit(leng);
+  changeLanguage(lang: string) {
+    this.languageSelected.emit(lang);
   }
 }
