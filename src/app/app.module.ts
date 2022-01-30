@@ -18,6 +18,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IconsModule } from './feather-icons/feather-icons.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,9 @@ import { IconsModule } from './feather-icons/feather-icons.module';
     ContactComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
     // initialize firebase tools
     AngularFireModule.initializeApp(environment.firebase),
     // ngx-translate and the loader module
@@ -39,7 +43,6 @@ import { IconsModule } from './feather-icons/feather-icons.module';
         deps: [HttpClient],
       },
     }),
-    BrowserModule,
     //icons
     IconsModule,
   ],

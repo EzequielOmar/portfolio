@@ -10,5 +10,14 @@
   },
   "proyects": {
     "tools": "Herramientas"
+  },
+  "form": {
+    "error": "Lo siento, ha sucedido un error interno. Por favor inténtelo en otro momento.",
+    "success": "¡Gracias! Me comunicare contigo a la brevedad.",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Celular",
+    "message": "Déjame un mensaje...",
+    "submit": "Enviar"
   }
 }

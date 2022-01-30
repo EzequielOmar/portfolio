@@ -7,10 +7,22 @@ import {
   ArrowDownRight,
   Code,
   Cloud,
+  Menu,
+  ArrowUp,
+  Loader,
 } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
-const icons = { Github, Linkedin, ArrowDownRight, Code, Cloud };
+const icons = {
+  Github,
+  Linkedin,
+  ArrowDownRight,
+  Code,
+  Cloud,
+  Menu,
+  ArrowUp,
+  Loader,
+};
 
 @NgModule({
   imports: [FeatherModule.pick(icons)],

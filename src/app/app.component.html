@@ -3,4 +3,7 @@
   <app-main></app-main>
   <app-proyects></app-proyects>
   <app-contact></app-contact>
+  <button (click)="scrollToTop()" *ngIf="pageYoffset > 300" class="scroll-to-top">
+    <i-feather name="arrow-up"></i-feather>
+  </button>
 </div>

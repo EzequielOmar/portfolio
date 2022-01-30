@@ -5,10 +5,19 @@
   },
   "main": {
     "hi": "Hi, I'm",
-    "make":"I make software.",
+    "make": "I make software.",
     "about": "Argentine, self-taught, interested in learning, improving, working as a team, and building efficient systems."
   },
   "proyects": {
     "tools": "Tools"
+  },
+  "form": {
+    "error": "Sorry, an internal error has occurred. Please try again later.",
+    "success": "Thanks! I will contact you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Leave me a message...",
+    "submit": "Submit"
   }
 }

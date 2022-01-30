@@ -4,9 +4,27 @@
 @import "tailwindcss/utilities";
 
 .btn {
-  @apply lg:w-auto my-8 border rounded py-4 px-8 text-center hover:bg-contrast_dark;
+  @apply my-8 border rounded py-4 px-8 text-center hover:bg-contrast_dark;
 }
 
 .tittle {
   @apply sm:text-5xl tracking-tight;
+}
+
+.form-input {
+  @apply mt-2 py-3 px-3 rounded-lg bg-dark border border-black text-darker font-semibold focus:border-contrast focus:outline-none;
+}
+
+.error {
+  border-color: red !important;
+}
+
+.text-stroke {
+  text-shadow: -1px -1px 0 #283044, 0 -1px 0 #283044, 1px -1px 0 #283044,
+    1px 0 0 #283044, 1px 1px 0 #283044, 0 1px 0 #283044, -1px 1px 0 #283044,
+    -1px 0 0 #283044;
+}
+
+.scroll-to-top {
+  @apply m-3 right-0 bottom-0 cursor-pointer fixed rounded text-darker bg-dark opacity-50 hover:opacity-75;
 }

@@ -1,4 +1,4 @@
-<section class="relative flex items-top justify-center min-h-screen bg-white sm:items-center sm:pt-0
+<section id="contact" class="relative flex items-top justify-center min-h-screen bg-white sm:items-center sm:pt-0
 text-center text-light">
   <div class="w-10/12 mx-auto sm:px-6 lg:px-8">
     <div class="mt-8 overflow-hidden">
@@ -7,62 +7,53 @@ text-center text-light">
           <h2 class="tittle">
             {{'menu.contact'|translate}}
           </h2>
-
-          <!--
-            <p class="text-normal text-lg sm:text-2xl font-medium mt-2">
-              Fill in the form to start a conversation
-            </p>
-          -->
-
-          <div class="items-center mt-8 p-4 bg-black bg-opacity-50 border border-contrast rounded shadow">
+          <div class="items-center mt-8 p-4 pb-6 bg-black bg-opacity-50 border border-contrast rounded shadow">
             <div class="text-md tracking-wide font-semibold mt-4">
               Github:
             </div>
             <a href="https://github.com/EzequielOmar" target="_blank">/EzequielOmar</a>
-
             <div class="text-md tracking-wide font-semibold mt-4">
               LinkedIn:
             </div>
             <a href="https://www.linkedin.com/in/ezequiel-omar-vazquez/" target="_blank">/in/ezequiel-omar-vazquez/</a>
-
             <div class="text-md tracking-wide font-semibold mt-4">
               Email:
             </div>
             <a href="mailto:ezequiel.omar.vazquez@gmail.com" target="_blank">ezequiel.omar.vazquez@gmail.com</a>
-
-
-
           </div>
-
-
-
-
         </div>
-
-        <form class="py-6 ml-4 flex flex-col justify-center">
+        <form class="py-6 ml-4 flex flex-col justify-center" [formGroup]="contactForm" (ngSubmit)="send()">
+          <div *ngIf="success" class="border-2 border-contrast_dark rounded p-2 mb-4">
+            {{'form.success'|translate}}
+          </div>
+          <div *ngIf="error" class="border-2 rounded p-2 mb-4 error">
+            {{'form.error'|translate}}
+          </div>
           <div class="flex flex-col">
-            <label for="name" class="hidden">Full Name</label>
-            <input type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3
-            rounded-lg bg-white border border-gray-400
-              font-semibold focus:border-indigo-500 focus:outline-none">
+            <label for="name" class="hidden"></label>
+            <input formControlName="name" type="name" name="name" placeholder="{{'form.name'|translate}}*"
+              [class.error]="contactForm.controls['name'].errors && sended" class="form-input">
           </div>
-
           <div class="flex flex-col mt-2">
-            <label for="email" class="hidden">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3
-            rounded-lg bg-white border border-gray-400
-              font-semibold focus:border-indigo-500 focus:outline-none">
+            <label for="email" class="hidden"></label>
+            <input formControlName="email" type="email" name="email" placeholder="{{'form.email'|translate}}*"
+              [class.error]="contactForm.controls['email'].errors && sended" class="form-input">
           </div>
-
           <div class="flex flex-col mt-2">
-            <label for="tel" class="hidden">Number</label>
-            <input type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-2 py-3 px-3
-            rounded-lg bg-white border border-gray-400
-               font-semibold focus:border-indigo-500 focus:outline-none">
+            <label for="tel" class="hidden"></label>
+            <input formControlName="phone" type="tel" name="tel" placeholder="{{'form.phone'|translate}}"
+              class="form-input">
           </div>
-
-          <button type="submit" class="btn">
-            Submit
+          <div class="flex flex-col mt-2">
+            <label for="message" class="hidden"></label>
+            <textarea formControlName="message" type="text" name="message" placeholder="{{'form.message'|translate}}*"
+              [class.error]="contactForm.controls['message'].errors && sended" class="form-input h-32"></textarea>
+          </div>
+          <button type="submit" class="btn w-1/3">
+            <p *ngIf="!loading">
+              {{'form.submit'|translate}}
+            </p>
+            <i-feather *ngIf="loading" name="loader" class="animate-spin h-5 w-5 m-0"></i-feather>
           </button>
         </form>
       </div>
