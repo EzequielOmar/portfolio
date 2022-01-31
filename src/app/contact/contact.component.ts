@@ -39,11 +39,16 @@ export class ContactComponent implements OnInit {
         })
         .finally(() => {
           this.loading = false;
+          this.sended = false;
           this.contactForm.reset();
         });
     }
-    this.sended = false;
+    this.turnOffMessages();
+  }
+
+  turnOffMessages() {
     setTimeout(() => {
+      this.sended = false;
       this.error = false;
       this.success = false;
     }, 2500);

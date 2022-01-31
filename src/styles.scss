@@ -12,7 +12,7 @@
 }
 
 .form-input {
-  @apply mt-2 py-3 px-3 rounded-lg bg-dark border border-black text-darker font-semibold focus:border-contrast focus:outline-none;
+  @apply mt-2 py-3 px-3 rounded-lg bg-grey border border-black text-dark font-semibold focus:border-contrast focus:outline-none;
 }
 
 .error {
@@ -26,5 +26,5 @@
 }
 
 .scroll-to-top {
-  @apply m-3 right-0 bottom-0 cursor-pointer fixed rounded text-darker bg-dark opacity-50 hover:opacity-75;
+  @apply m-3 right-0 bottom-0 cursor-pointer fixed rounded text-dark bg-grey opacity-50 hover:opacity-75;
 }
