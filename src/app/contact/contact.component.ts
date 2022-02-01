@@ -27,30 +27,29 @@ export class ContactComponent implements OnInit {
 
   send() {
     this.sended = true;
+    setTimeout(() => {
+      this.sended = false;
+    }, 4000);
     if (this.contactForm.valid) {
       this.loading = true;
       this.sm
         .newMessage(this.contactForm.value)
         .then(() => {
           this.success = true;
+          setTimeout(() => {
+            this.success = false;
+          }, 4000);
         })
         .catch(() => {
           this.error = true;
+          setTimeout(() => {
+            this.error = false;
+          }, 4000);
         })
         .finally(() => {
           this.loading = false;
-          this.sended = false;
           this.contactForm.reset();
         });
     }
-    this.turnOffMessages();
-  }
-
-  turnOffMessages() {
-    setTimeout(() => {
-      this.sended = false;
-      this.error = false;
-      this.success = false;
-    }, 2500);
   }
 }

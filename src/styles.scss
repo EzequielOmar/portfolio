@@ -28,3 +28,7 @@
 .scroll-to-top {
   @apply m-3 right-0 bottom-0 cursor-pointer fixed rounded text-dark bg-grey opacity-50 hover:opacity-75;
 }
+
+.proyects-links {
+  @apply flex flex-wrap text-center justify-center w-auto p-1 bg-black rounded border border-contrast;
+}

@@ -9,7 +9,9 @@
     "about": "Argentine, self-taught, interested in learning, improving, working as a team, and building efficient systems."
   },
   "proyects": {
-    "tools": "Tools"
+    "tools": "Tools",
+    "live":"Live",
+    "code":"Code"
   },
   "form": {
     "error": "Sorry, an internal error has occurred. Please try again later.",

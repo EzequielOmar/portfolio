@@ -9,7 +9,9 @@
     "about": "Argentino, autodidacta, interesado en aprender, mejorar, trabajar en equipo, y construir sistemas eficientes."
   },
   "proyects": {
-    "tools": "Herramientas"
+    "tools": "Herramientas",
+    "live":"Vivo",
+    "code":"Código"
   },
   "form": {
     "error": "Lo siento, ha sucedido un error interno. Por favor inténtelo en otro momento.",
