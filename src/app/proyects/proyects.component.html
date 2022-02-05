@@ -4,10 +4,11 @@
   <!--Proyects-->
   <div class="container px-5 py-10 mx-auto text-center lg:px-20 text-light">
     <ul class="flex flex-wrap -m-4">
-      <li *ngFor="let p of proyects" class="sm:w-1/2 w-100 p-8 ">
+      <li *ngFor="let p of proyects" class="sm:w-1/2 w-100 p-8" itemscope itemtype="https://schema.org/workExample">
         <h2 class="title-font text-lg font-semibold mb-3">{{p.name}}</h2>
         <div class="flex relative">
-          <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center " src="{{p.gif}}">
+          <img alt="gif of one proyect" class="absolute inset-0 w-full h-full object-cover object-center "
+            src="{{p.gif}}">
           <div class="px-8 pt-16 pb-10 relative z-10 w-full border-2 bg-dark opacity-0 hover:opacity-90">
             <p class="leading-relaxed">
               {{p.description}}
