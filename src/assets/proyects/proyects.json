@@ -6,5 +6,13 @@
     "git": "https://github.com/EzequielOmar/Inmobiliaria-replica",
     "host": "https://ezequielomar.github.io/Inmobiliaria-replica",
     "gif": "assets/proyects/gifs/real-state.gif"
+  },
+  {
+    "name": "Typical To-Do App",
+    "description": "A typical to-do app with google authentication on back-end server.",
+    "tools": "NestJs, JWT, Google OAuth, GraphQl, AngularJs.",
+    "git": "https://github.com/EzequielOmar/todo-app",
+    "host": "https://eov-todo-client.herokuapp.com/login",
+    "gif": "assets/proyects/gifs/todo-app.gif"
   }
 ]

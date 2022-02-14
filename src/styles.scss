@@ -20,9 +20,15 @@
 }
 
 .text-stroke {
-  text-shadow: -1px -1px 0 #283044, 0 -1px 0 #283044, 1px -1px 0 #283044,
-    1px 0 0 #283044, 1px 1px 0 #283044, 0 1px 0 #283044, -1px 1px 0 #283044,
-    -1px 0 0 #283044;
+  text-shadow:
+  -1px -1px 0 #bfa89e,
+   0 -1px 0 #bfa89e,
+    1px -1px 0 #bfa89e,
+    1px 0 0 #bfa89e,
+    1px 1px 0 #bfa89e,
+     0 1px 0 #bfa89e,
+     -1px 1px 0 #bfa89e,
+    -1px 0 0 #bfa89e;
 }
 
 .scroll-to-top {
@@ -31,4 +37,9 @@
 
 .proyects-links {
   @apply flex flex-wrap text-center justify-center w-auto p-1 bg-black rounded border border-contrast;
+}
+
+.proyect-img {
+  height: 19rem;
+  max-width: 24rem;
 }
