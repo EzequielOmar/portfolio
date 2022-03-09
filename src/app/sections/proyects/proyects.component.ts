@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadProyectsService } from '../services/load-proyects.service';
+import { LoadProyectsService } from 'src/app/services/load-proyects.service';
 
 @Component({
   selector: 'app-proyects',

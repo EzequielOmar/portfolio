@@ -20,10 +20,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IconsModule } from './feather-icons/feather-icons.module';
 //components
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { NavComponent } from './nav/nav.component';
-import { ProyectsComponent } from './proyects/proyects.component';
-import { ContactComponent } from './contact/contact.component';
+import { MainComponent } from './sections/main/main.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
+import { NavComponent } from './sections/nav/nav.component';
+import { ProyectsComponent } from './sections/proyects/proyects.component';
+import { ContactComponent } from './sections/contact/contact.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainPageComponent } from './pages/main/main-page.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     ProyectsComponent,
     ContactComponent,
+    MainPageComponent,
   ],
   imports: [
     FormsModule,
@@ -51,6 +55,8 @@ import { ContactComponent } from './contact/contact.component';
     }),
     //icons
     IconsModule,
+    AppRoutingModule,
+    ScullyLibModule,
   ],
   providers: [ScreenTrackingService, UserTrackingService],
   bootstrap: [AppComponent],

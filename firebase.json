@@ -1,7 +1,7 @@
 {
   "hosting": {
     "target": "ezequielomar",
-    "public": "dist/ezequielomar",
+    "public": "dist/static",
     "ignore": [
       "**/.*"
     ],

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { SaveMessageService } from '../services/save-message.service';
+import { SaveMessageService } from 'src/app/services/save-message.service';
 
 @Component({
   selector: 'app-contact',
